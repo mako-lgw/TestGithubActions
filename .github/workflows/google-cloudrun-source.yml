@@ -59,9 +59,9 @@ jobs:
         name: 'Authenticate to Google Cloud'
         uses: 'google-github-actions/auth@f112390a2df9932162083945e46d439060d66ec2' # google-github-actions/auth@v2
         with:
-          service_account: 'my-service-account@eternal-concept-431905-q6.iam.gserviceaccount.com' # 20250301 add
           project_id: 'eternal-concept-431905-q6' # 20250301 add
           workload_identity_provider: 'projects/453747932797/locations/global/workloadIdentityPools/github/providers/my-repo-test' # TODO: replace with your workload identity provider
+          service_account: 'my-service-account@eternal-concept-431905-q6.iam.gserviceaccount.com' # 20250301 add
 
       - name: 'Deploy to Cloud Run'
         uses: 'google-github-actions/deploy-cloudrun@33553064113a37d688aa6937bacbdc481580be17' # google-github-actions/deploy-cloudrun@v2
