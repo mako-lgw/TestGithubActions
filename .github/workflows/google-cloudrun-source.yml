@@ -61,7 +61,7 @@ jobs:
         with:
           project_id: 'eternal-concept-431905-q6' # 20250301 add
           workload_identity_provider: 'projects/453747932797/locations/global/workloadIdentityPools/github/providers/my-repo-test' # TODO: replace with your workload identity provider
-          service_account: 'my-service-account@eternal-concept-431905-q6.iam.gserviceaccount.com' # 20250301 add
+          service_account: 'my-service-account-test@eternal-concept-431905-q6.iam.gserviceaccount.com' # 20250301 add
           # credentials_json: 'GCP_SA_KEY' # Replace with the name of your GitHub Actions secret
 
       - name: 'Deploy to Cloud Run'
